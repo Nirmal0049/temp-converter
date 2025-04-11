@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1>🌡️ Temperature Converter</h1>
+
+      <input type="number" id="inputTemp" placeholder="Enter temperature" step="any" />
+
+      <select id="fromUnit">
+        <option value="" disabled selected>From Unit</option>
+        <option value="C">Celsius (°C)</option>
+        <option value="F">Fahrenheit (°F)</option>
+        <option value="K">Kelvin (K)</option>
+      </select>
+
+      <select id="toUnit">
+        <option value="" disabled selected>To Unit</option>
+        <option value="C">Celsius (°C)</option>
+        <option value="F">Fahrenheit (°F)</option>
+        <option value="K">Kelvin (K)</option>
+      </select>
+
+      <div class="btn-group">
+        <button onclick="convertTemp()">Convert</button>
+        <button onclick="clearForm()" class="clear-btn">Clear</button>
+      </div>
+
+      <div id="result"></div>
+    </div>
+
+    <footer>
+      Made by <strong>Nirmal Bhange</strong> (BEITA - 21101A0049)
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
